@@ -47,3 +47,9 @@
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
 })(jQuery);
+
+if($(".instagram").length) {
+    require(['/js/photo.js', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
+        obj.init();
+    });
+}
